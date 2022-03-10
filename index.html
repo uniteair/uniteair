@@ -18,21 +18,11 @@
     
     <title>:: 유나이티어 UNITEAIR ::</title>
     <link type="text/css" href="css/layout.css" rel="stylesheet" />
+    <link type="text/css" href="css/swiper-bundle.min.css" rel="stylesheet" />
 
-    <script src="js/jquery.min.js"></script>
-    <script src="js/slides.min.jquery.js"></script>
-    <script>
-        $(function(){
-            $('#slides').slides({
-                preload: true,
-                preloadImage: 'images/loading.gif',
-                play: 5000,
-                pause: 2500,
-                hoverPause: true
-            });
-        });
-    </script>
-
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/swiper-bundle.min.js"></script>
+    
 </head>
 <body>
 
@@ -42,13 +32,12 @@
         <!-- #header -->
         <div id="header">
             <div class="top">
-                <h1><a href="/uniteair/index.html"><img src="images/logo.png" alt=""></a></h1>
+                <h1><a href="/uniteair/index.html"><img src="images/logo.png" alt="유나이티어 ui"></a></h1>
                 <ul class="navi">
-                    <li><a href="/uniteair/index.html">HOME</a></li>
-                    <li><a href="/uniteair/about/about.html">About UNITEAIR</a></li>
-                    <!-- <li><a href="#3">Business</a></li> -->
-                    <!-- <li><a href="#4">Portfolio</a></li> -->
-                    <li><a href="/uniteair/contactus/contactus.html">Contact us</a></li>
+                    <li><a href="/uniteair/index.html">Home</a></li>
+                    <li><a href="/uniteair/work/work.html">Work</a></li>
+                    <li><a href="/uniteair/about/about.html">About Us</a></li>
+                    <li><a href="/uniteair/contactus/contactus.html">Contact Us</a></li>
                 </ul>
             </div>
         </div>
@@ -57,382 +46,127 @@
         <!-- #contents -->
 
         <!-- #Portfolio -->
-        <div id="portfolio">
-            <!-- <h2><img src="images/tit_portfolio.png" alt="Portfolio" /></h2> -->
-            <div class="cont">
-                <!-- 2016 -->
-                <div class="con">
-                    <dl>
-                        <div style="opacity:0.4;"><img src="images/portpolio/2016/2016_09.jpg" alt=""></div>
-                        <dt><span class=" co301">행안부 대표 홈페이지 <br> 반응형 구축중<br>(기획/디자인)</span></dt>
-                    </dl>
-                </div>
+        <div id="visual">
+            <div class="swipe">
+                <div class="swiper mySwiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="portPolio">
+                                <div class="portImg">
+                                    <img src="../images/portpolio/main/port01.png" alt="">
+                                </div>
 
-                <div class="con">
-                    <dl>
-                        <div style="opacity:0.4;"><img src="images/portpolio/2016/2016_10.jpg" alt=""></div>
-                        <dt><span class=" co301">KBO 사이버 아카데미<br> 시스템 구축중</span></dt>
-                    </dl>
-                </div>
+                                <div class="portTxt">
+                                    <h3 class="portTitle">Liiv Next</h3>
+                                    <div class="portTxt">
+                                        <dl>
+                                            <dt>Client</dt>
+                                            <dd>: KB Liiv Next</dd>
+                                        </dl>
+                                        <dl>
+                                            <dt>Year</dt>
+                                            <dd>: 2022.01</dd>
+                                        </dl>
+                                    </div>
+                                    <div class="work">모바일 앱 구축</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="portPolio">
+                                <div class="portImg">
+                                    <img src="../images/portpolio/main/port02.png" alt="">
+                                </div>
 
-                <div class="con">
-                    <dl>
-                        <div><img src="images/portpolio/default_pp.jpg" alt=""></div>
-                        <dt><span class="co301">웹컴저축 은행 구축중 <br> (퍼블리싱)</span></dt>
-                    </dl>
-                </div>
+                                <div class="portTxt">
+                                    <h3 class="portTitle">Liiv Next</h3>
+                                    <div class="portTxt">
+                                        <dl>
+                                            <dt>Client</dt>
+                                            <dd>: KB Liiv Next</dd>
+                                        </dl>
+                                        <dl>
+                                            <dt>Year</dt>
+                                            <dd>: 2022.01</dd>
+                                        </dl>
+                                    </div>
+                                    <div class="work">모바일 앱 구축</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="portPolio">
+                                <div class="portImg">
+                                    <img src="../images/portpolio/main/port03.png" alt="">
+                                </div>
 
-                <div class="con">
-                    <dl>
-                        <div><img src="images/portpolio/default_pp.jpg" alt=""></div>
-                        <dt><span class="co301">서초구청 서초맵 구축중 <br> (기획)</span></dt>
-                    </dl>
-                </div>
-                <!-- //////////// -->
-                <div class="con">
-                    <dl>
-                        <div><img src="images/portpolio/default_pp.jpg" alt=""></div>
-                        <dt><span class="co301">대상 청정원 <br> E-SHOP 구축중 <br> (기획/디자인)</span></dt>
-                    </dl>
-                </div>
+                                <div class="portTxt">
+                                    <h3 class="portTitle">Liiv Next</h3>
+                                    <div class="portTxt">
+                                        <dl>
+                                            <dt>Client</dt>
+                                            <dd>: KB Liiv Next</dd>
+                                        </dl>
+                                        <dl>
+                                            <dt>Year</dt>
+                                            <dd>: 2022.01</dd>
+                                        </dl>
+                                    </div>
+                                    <div class="work">모바일 앱 구축</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="portPolio">
+                                <div class="portImg">
+                                    <img src="../images/portpolio/main/port04.png" alt="">
+                                </div>
 
-                <div class="con">
-                    <dl>
-                        <div><img src="images/portpolio/2016/2016_01.jpg" alt=""></div>
-                        <dt><span class="co301">롯데면세점 중국 <br> 모바일웹/앱</span></dt>
-                    </dl>
-                </div>
+                                <div class="portTxt">
+                                    <h3 class="portTitle">Liiv Next</h3>
+                                    <div class="portTxt">
+                                        <dl>
+                                            <dt>Client</dt>
+                                            <dd>: KB Liiv Next</dd>
+                                        </dl>
+                                        <dl>
+                                            <dt>Year</dt>
+                                            <dd>: 2022.01</dd>
+                                        </dl>
+                                    </div>
+                                    <div class="work">모바일 앱 구축</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="portPolio">
+                                <div class="portImg">
+                                    <img src="../images/portpolio/main/port05.png" alt="">
+                                </div>
 
-                <div class="con">
-                    <dl>
-                        <div><img src="images/portpolio/2016/2016_02.jpg" alt=""></div>
-                        <dt><span class="co301">기아자동차 3.0 <br> PC/모바일웹 구축</span></dt>
-                    </dl>
-                </div>
+                                <div class="portTxt">
+                                    <h3 class="portTitle">Liiv Next</h3>
+                                    <div class="portTxt">
+                                        <dl>
+                                            <dt>Client</dt>
+                                            <dd>: KB Liiv Next</dd>
+                                        </dl>
+                                        <dl>
+                                            <dt>Year</dt>
+                                            <dd>: 2022.01</dd>
+                                        </dl>
+                                    </div>
+                                    <div class="work">모바일 앱 구축</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
 
-                <div class="con">
-                    <dl>
-                        <div><img src="images/portpolio/2016/2016_03.jpg" alt=""></div>
-                        <dt><span class="co301">현대자동차 차세대 딜러 <br> 교육시스템 <br> (PC/모바일웹/앱)</span></dt>
-                    </dl>
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-pagination"></div>
                 </div>
-                <!-- //////////// -->
-                <div class="con">
-                    <dl>
-                        <div><img src="images/portpolio/2016/2016_04.jpg" alt=""></div>
-                        <dt><span class="co301">LG 생활건강 이자녹스 구축</span></dt>
-                    </dl>
-                </div>
-
-                <div class="con">
-                    <dl>
-                        <div><img src="images/portpolio/2016/2016_05.jpg" alt=""></div>
-                        <dt><span class=" co301">서울시 북촌 <br> IOT사업/서비스 <br> API 구축</span></dt>
-                    </dl>
-                </div>
-
-                <div class="con">
-                    <dl>
-                        <div><img src="images/portpolio/2016/2016_06.jpg" alt=""></div>
-                        <dt><span class="co301">삼성생명 <br> ERP연계시스템 <br> 웹서비스(기획)</span></dt>
-                    </dl>
-                </div>
-
-                <div class="con">
-                    <dl>
-                        <div><img src="images/portpolio/2016/2016_07.jpg" alt=""></div>
-                        <dt><span class="co301">롯데시네마 차세대 시스템</span></dt>
-                    </dl>
-                </div>
-                <!-- //////////// -->
-                <div class="con">
-                    <dl>
-                        <div><img src="images/portpolio/2016/2016_08.jpg" alt=""></div>
-                        <dt><span class=" co301">더 현대 현대닷컴 쇼핑몰</span></dt>
-                    </dl>
-                </div>
-
-
-                <!-- // 2016 -->
-
-                <!-- 2015 -->
-                <div class="con">
-                    <dl>
-                        <div><img src="images/portpolio/2015/2015_01.jpg" alt=""></div>
-                        <dt><span class="co301">GS리테일 통합시스템 </span></dt>
-                    </dl>
-                </div>
-
-                <div class="con">
-                    <dl>
-                        <div><img src="images/portpolio/2015/2015_02.jpg" alt=""></div>
-                        <dt><span class="co301">GS리테일 통합시스템 <br> 모바일</span></dt>
-                    </dl>
-                </div>
-
-                <div class="con">
-                    <dl>
-                        <div><img src="images/portpolio/2015/2015_03.jpg" alt=""></div>
-                        <dt><span class="fsz14 co301">EBS교사지원 수능 연계시스템 <br> 포털 및 모바일웹 <br> (기획/디자인/퍼블리싱)</span></dt>
-                    </dl>
-                </div>
-
-                <div class="con">
-                    <dl>
-                        <div><img src="images/portpolio/2015/2015_04.jpg" alt=""></div>
-                        <dt><span class="co301">LG 생활건강 FULL 반응형 이자녹스</span></dt>
-                    </dl>
-                </div>
-                <!-- //////////// -->
-                <div class="con">
-                    <dl>
-                        <div><img src="images/portpolio/2015/2015_05.jpg" alt=""></div>
-                        <dt><span class="fsz14 co301">세종시 교육청 자기주도학습 <br> 사이트/모바일웹<br> (기획/디자인)</span></dt>
-                    </dl>
-                </div>
-                <div class="con">
-                    <dl>
-                        <div><img src="images/portpolio/2015/2015_06.jpg" alt=""></div>
-                        <dt><span class="co301">BC카드 모바일 앱 <br> (기획/디자인/퍼블)</span></dt>
-                    </dl>
-                </div>
-                <!-- // 2015 -->
-
-
-                <!-- 2014 -->
-                <div class="con">
-                    <dl>
-                        <div><img src="images/portpolio/2014/2014_01.jpg" alt=""></div>
-                        <dt><span class="co301">삼성전자 SSP 개발자 포탈(운영)</span></dt>
-                    </dl>
-                </div>
-
-                <div class="con">
-                    <dl>
-                        <div><img src="images/portpolio/2014/2014_02.jpg" alt=""></div>
-                        <dt><span class="co301">삼성전자 PRM <br> 글로벌 사이트</span></dt>
-                    </dl>
-                </div>
-
-                <div class="con">
-                    <dl>
-                        <div><img src="images/portpolio/2014/2014_03.jpg" alt=""></div>
-                        <dt><span class="co301">삼성전자 그룹플레이어 <br> (웹/앱)</span></dt>
-                    </dl>
-                </div>
-
-                <div class="con">
-                    <dl>
-                        <div><img src="images/portpolio/2014/2014_04.jpg" alt=""></div>
-                        <dt><span class="co301">이니시스 BTOB 쇼핑몰</span></dt>
-                    </dl>
-                </div>
-                <!-- //////////// -->
-                <div class="con">
-                    <dl>
-                        <div><img src="images/portpolio/2014/2014_05.jpg" alt=""></div>
-                        <dt><span class="co301">삼성전자 블루맴버쉽 <br> 국,중 CRM통합사이트</span></dt>
-                    </dl>
-                </div>
-
-                <div class="con">
-                    <dl>
-                        <div><img src="images/portpolio/2014/2014_06.jpg" alt=""></div>
-                        <dt><span class="co301">현대자동차 딜러교육시스템 <br> 선행프로젝트(설계)</span></dt>
-                    </dl>
-                </div>
-
-                <div class="con">
-                    <dl>
-                        <div><img src="images/portpolio/2014/2014_07.jpg" alt=""></div>
-                        <dt><span class="co301">대성 마이맥 리뉴얼(참여)</span></dt>
-                    </dl>
-                </div>
-
-                <div class="con">
-                    <dl>
-                        <div><img src="images/portpolio/2014/2014_08.jpg" alt=""></div>
-                        <dt><span class="co301">농업진흥연구소(6차산업) <br> 포털 및 모바일 웹</span></dt>
-                    </dl>
-                </div>
-                <!-- //////////// -->
-                <div class="con">
-                    <dl>
-                        <div><img src="images/portpolio/2014/2014_09.jpg" alt=""></div>
-                        <dt><span class="co301">티켓거래 중개사이트 <br> 티켓베이</span></dt>
-                    </dl>
-                </div>
-
-                <div class="con">
-                    <dl>
-                        <div><img src="images/portpolio/2014/2014_10.jpg" alt=""></div>
-                        <dt><span class="co301">엘롯데쇼핑몰</span></dt>
-                    </dl>
-                </div>
-
-                <div class="con">
-                    <dl>
-                        <div><img src="images/portpolio/2014/2014_11.jpg" alt=""></div>
-                        <dt><span class="co301">능률협회 인증원 교육센터</span></dt>
-                    </dl>
-                </div>
-                <!-- //////////// -->
-                <div class="con">
-                    <dl>
-                        <div><img src="images/portpolio/2014/2014_12.jpg" alt=""></div>
-                        <dt><span class="co301">리워드앱랄랄라 앱 <br> (구축/운영)</span></dt>
-                    </dl>
-                </div>
-                <!-- // 2014 -->
-
-
-                <!-- 2013 -->
-                <div class="con">
-                    <dl>
-                        <div><img src="images/portpolio/2013/2013_01.jpg" alt=""></div>
-                        <dt><span class="co301">삼성전자 SSP 개발자 포탈(운영)</span></dt>
-                    </dl>
-                </div>
-
-                <div class="con">
-                    <dl>
-                        <div><img src="images/portpolio/2013/2013_02.jpg" alt=""></div>
-                        <dt><span class="co301">CGV 예매시스템</span></dt>
-                    </dl>
-                </div>
-
-                <div class="con">
-                    <dl>
-                        <div><img src="images/portpolio/2013/2013_03.jpg" alt=""></div>
-                        <dt><span class="co301">CGV 프리머스</span></dt>
-                    </dl>
-                </div>
-
-                <div class="con">
-                    <dl>
-                        <div><img src="images/portpolio/2013/2013_04.jpg" alt=""></div>
-                        <dt><span class="co301">아산병원 심장센터</span></dt>
-                    </dl>
-                </div>
-                <!-- //////////// -->
-                <div class="con">
-                    <dl>
-                        <div><img src="images/portpolio/2013/2013_05.jpg" alt=""></div>
-                        <dt><span class="co301">파리바게뜨(웹)</span></dt>
-                    </dl>
-                </div>
-
-                <div class="con">
-                    <dl>
-                        <div><img src="images/portpolio/2013/2013_06.jpg" alt=""></div>
-                        <dt><span class="co301">파리바게뜨(모바일)</span></dt>
-                    </dl>
-                </div>
-
-                <div class="con">
-                    <dl>
-                        <div><img src="images/portpolio/2013/2013_07.jpg" alt=""></div>
-                        <dt><span class="co301">대웅제약연계 동부화재 <br> 건강정보 사이트</span></dt>
-                    </dl>
-                </div>
-
-                <div class="con">
-                    <dl>
-                        <div><img src="images/portpolio/2013/2013_08.jpg" alt=""></div>
-                        <dt><span class="co301">신한카드 스마트월렛</span></dt>
-                    </dl>
-                </div>
-                <!-- //////////// -->
-                <div class="con">
-                    <dl>
-                        <div><img src="images/portpolio/2013/2013_09.jpg" alt=""></div>
-                        <dt><span class="co301">타이니빅 쇼핑몰</span></dt>
-                    </dl>
-                </div>
-                <!-- // 2013 -->
-
-
-                <!-- 2011 ~ 2012 -->
-                <div class="con">
-                    <dl>
-                        <div><img src="images/portpolio/2011_2/2011_01.jpg" alt=""></div>
-                        <dt><span class="co301">와이즈파크</span></dt>
-                    </dl>
-                </div>
-
-                <div class="con">
-                    <dl>
-                        <div><img src="images/portpolio/2011_2/2011_02.jpg" alt=""></div>
-                        <dt><span class="co301">구구스 쇼핑몰(디자인)</span></dt>
-                    </dl>
-                </div>
-
-                <div class="con">
-                    <dl>
-                        <div><img src="images/portpolio/2011_2/2011_03.jpg" alt=""></div>
-                        <dt><span class="co301">삼성생명 은퇴설계</span></dt>
-                    </dl>
-                </div>
-
-                <div class="con">
-                    <dl>
-                        <div><img src="images/portpolio/2011_2/2011_04.jpg" alt=""></div>
-                        <dt><span class="co301">사이더스 메이든유 <br> 오디션 사이트</span></dt>
-                    </dl>
-                </div>
-                <!-- //////////// -->
-                <div class="con">
-                    <dl>
-                        <div><img src="images/portpolio/2011_2/2011_05.jpg" alt=""></div>
-                        <dt><span class="co301">노원청소년 수련관 리뉴얼</span></dt>
-                    </dl>
-                </div>
-
-                <div class="con">
-                    <dl>
-                        <div><img src="images/portpolio/2011_2/2012_01.jpg" alt=""></div>
-                        <dt><span class="co301">한화 갤러리아 식품관</span></dt>
-                    </dl>
-                </div>
-
-                <div class="con">
-                    <dl>
-                        <div><img src="images/portpolio/default_pp.jpg" alt=""></div>
-                        <dt><span class="co301">이지듀 화장품 쇼핑몰</span></dt>
-                    </dl>
-                </div>
-
-                <div class="con">
-                    <dl>
-                        <div><img src="images/portpolio/2011_2/2012_02.jpg" alt=""></div>
-                        <dt><span class="co301">미쓰이 스미토모 <br> 인터넷뱅킹 시스템</span></dt>
-                    </dl>
-                </div>
-                <!-- //////////// -->
-                <div class="con">
-                    <dl>
-                        <div><img src="images/portpolio/2011_2/2012_03.jpg" alt=""></div>
-                        <dt><span class="co301">보건사회 연구원 <br> 금연길라잡이 리뉴얼 <br> (구축/운영)</span></dt>
-                    </dl>
-                </div>
-
-                <div class="con">
-                    <dl>
-                        <div><img src="images/portpolio/2011_2/2012_04.jpg" alt=""></div>
-                        <dt><span class="co301">전기공사 인력개발원 <br> 리뉴얼</span></dt>
-                    </dl>
-                </div>
-
-                <div class="con">
-                    <dl>
-                        <div><img src="images/portpolio/2011_2/2012_05.jpg" alt=""></div>
-                        <dt><span class="co301">롯데닷컴 기업소개 &amp; LECS</span></dt>
-                    </dl>
-                </div>
-
-                <!-- // 2011 ~ 2012 -->
             </div>
-
 
 
         </div>
@@ -451,6 +185,21 @@
     </div>
     <!-- /#wrapper -->
 
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+            slidesPerView: 1,
+            spaceBetween: 30,
+            loop: true,
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+        });
+    </script>
 
 </body>
 </html>
