@@ -1,8 +1,10 @@
 @charset "euc-kr";
 
+@import url(http://fonts.googleapis.com/earlyaccess/nanumgothic.css);
+
 /* Common */
 body,p,h1,h2,h3,h4,h5,h6,ul,ol,li,dl,dt,dd,table,th,td,form,fieldset,legend,input,textarea,button,select{margin:0; padding:0}
-body,input,textarea,select,button,table{font-size:12px; font-family:"Malgun Gothic",��������,����,Dotum,AppleGothic,sans-serif; color:#666; line-height:18px;}
+body,input,textarea,select,button,table{font-size:12px; font-family:"Nanum Gothic", Dotum,AppleGothic,sans-serif; color:#666; line-height:18px;}
 img{border:0; font-size:0; vertical-align:middle;}
 ul,ol,dl{list-style:none; font-size:0;}
 li{font-size:12px;}
@@ -32,15 +34,28 @@ h2 {padding-top:70px;}
 #visual .swipe .swiper{height: 100%;}
 #visual .swipe .swiper .swiper-pagination{bottom: 50px;}
 .portPolio{position:absolute;width:1200px;left:50%;top:50%;transform: translate(-50%, -50%);}
+.portPolio .portImg{position: relative;z-index: 1;}
+.portPolio .portInfo{position: absolute;right:0;top:50%;width:375px;transform: translateY(-50%);z-index: 2;}
+.portPolio .portInfo .portTitle{font-size: 40px;color:#000;font-weight: bold;}
+.portPolio .portInfo .portTxt{margin-top:50px;}
+.portPolio .portInfo .portTxt dl{font-size: 12px;}
+.portPolio .portInfo .portTxt dl dt{display:inline-block; width:60px;color:#ff3030;font-weight: bold;}
+.portPolio .portInfo .portTxt dl dd{display:inline-block;color:#666;font-weight: bold;}
+.portPolio .portInfo .work{margin-top:60px;font-size:13px;color:#666;font-weight: bold;}
+
+
+
 .swipe .swiper-pagination-bullet{width:15px;height:15px;background-color: #444;opacity: 1;}
 .swipe .swiper-pagination-bullet-active{background-color: #ff3030;}
 
 
 #portfolio{position:relative; width:100%; margin-top:70px;text-align:center;overflow:hidden;background:url('../images/portpolio/pattern_bg.gif') ;}
 #portfolio .txt{padding-top:70px;}
-#portfolio .cont{position:relative; width:1000px; margin:0 auto; text-align:center; padding-top:40px;}
-#portfolio .cont .con{float:left; width:230px; padding:0 10px;margin-bottom:15px;}
+#portfolio .cont{position:relative; width:1200px; margin:0 auto; text-align:center; padding-top:40px;}
+#portfolio .cont .con{float:left; width:232px; margin:0 0 15px 10px;}
+#portfolio .cont .con:nth-child(5n + 1){margin-left:0;}
 #portfolio .cont .con dl div{border:1px solid #ecebeb;width:198px;min-height:127px;}
+#portfolio .cont .con dl div img{width:100%;}
 #portfolio .cont .con dl{border:1px solid #ddd;min-height:210px;padding:15px;background:#fff;
  -webkit-transition: all 0.5s ease;
  -moz-transition: all 0.5s ease;
