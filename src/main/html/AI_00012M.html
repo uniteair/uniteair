@@ -1,0 +1,318 @@
+
+            <!-- Start contents -->    
+            <div class="contents">                
+                <!-- Start row -->
+                <div class="row">
+                    <!-- Start col -->
+                    <div class="col-lg">
+                        <div class="card m-b-30">
+                            <div class="card-header">
+                                <h4 class="card-title">예치계좌 잔액 조회</h4>
+                            </div>
+                            
+                            <div class="card-body">
+                                <div class="table-responsive table-search-wrapper">
+                                    <table class="table Search-table">
+                                        <colgroup>
+                                            <col width="120px"></col>
+                                            <col ></col>
+                                        </colgroup>
+                                        <tbody>
+                                            <tr>
+                                                <th scope="row"><div>조회일자</div></th>
+                                                <td>
+                                                    <div class="form-group form-date">
+                                                        <div class="input-group">
+                                                            <input type="text" id="autoclose-date" class="datepicker-here form-datepicker form-control" placeholder="조회일자" aria-describedby="basic-addon2"/>
+                                                            <div class="input-group-append">
+                                                                <span class="input-group-text" id="basic-addon2"><i class="feather icon-calendar"></i></span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+
+                                <div class="button-list button-group-list">
+                                    <button type="button" class="btn btn-tertiary">초기화</button>
+                                    <button type="button" class="btn btn-primary">조회</button>
+                                </div>
+
+                                <div class="con_wrap">
+                                    <div class="con_header">
+                                        <div class="con_title">
+                                            <span>예치계좌 정보</span>
+                                            <button type="button" class="btn btn-tooltip" data-bs-toggle="tooltip" data-bs-placement="right" data-bs-html="true" 
+                                            title="
+                                            <ul class='tooltip-list'>
+                                                <li>상생매출 발행금액은 조회 기준일 이전 발행되고 만기일이 경과되지 않은 채권 합계금액.</li>
+                                                <li>할인, 선정산 금액 : 대상 채권 중 수취기업이 할인 또는 선정산으로 조기 현금화한 합계금액.</li>
+                                            </ul>
+                                            "></button>
+                                        </div>
+                                        <div class="con_right"><span>(단위 :원)</span></div>
+                                    </div>
+                                    <div class="con_text">
+                                        <div class="table-responsive table-search-wrapper">
+                                            <table class="table View-table">
+                                                <colgroup>
+                                                    <col ></col>
+                                                    <col ></col>
+                                                    <col ></col>
+                                                </colgroup>
+                                                <thead>
+                                                    <tr>
+                                                        <th scope="col"><div>상생매출채권 발행금액 (A)</div></th>
+                                                        <th scope="col"><div>할인, 선정산 금액 (B)</div></th>
+                                                        <th scope="col" class="point-color"><div>예치금계좌 증빙 금액 (A-B)</div></th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <td class="text-end">
+                                                            <div><span>900,000,000</span></div>
+                                                        </td>
+                                                        <td class="text-end">
+                                                            <div><span>300,000,000</span></div>
+                                                        </td>
+                                                        <td class="point-color text-end">
+                                                            <div><span>600,000,000</span></div>
+                                                        </td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                        <div class="button-list narrow flex-align-end">
+                                            <button type="button" class="btn btn-secondary btn-sm btn-certificate-view">예치계좌 입금 확인서</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <!-- Datatable Start -->
+                                <div class="dataTable-wrap">
+                                    <div class="con_header">
+                                        <div class="con_title">
+                                            <span>대상채권</span>
+                                        </div>
+                                    </div>
+                                    <div class="table-responsive">
+                                        <table id="datatable-ajax" class="table table-striped aligned-center hover"></table>
+                                    </div>
+                                </div>
+
+                                <!-- Datatable End -->
+                            </div>
+
+                            <!-- popup - 예치계좌 입금확인서 -->
+                            <div id="bd-example-modal2" class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" aria-hidden="true">
+                                <div class="modal-dialog modal-lg">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h5 class="modal-title" id="exampleLargeModalLabel">예치계좌 입금확인서</h5>
+                                            <div class="btn-group">
+                                                <button type="button" class="ico-print-btn" onclick="printModalContent(this)"><span>인쇄</span></button>
+                                                <button type="button" class="close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                            </div>
+                                        </div>
+                                        <div class="modal-body">
+                                            <div class="print-wrapper">
+                                                <div class="foundation_logo">
+                                                    <img src="/src/main/resources/images/common/logo/logo_foundation.png" alt="대중소기업농어업협력재단 / 상생협력으로 건강한 산업생태계 조성"></span>
+                                                </div>
+                                                <div class="popup-content-liner">
+                                                    <div class="header-certificate">
+                                                        예치계좌 입금확인서
+                                                    </div>
+
+                                                    <div class="body-certificate">
+                                                        <div class="body-certificate-header">
+                                                            <div class="body-certificate-title">글로벌 삼성전자</div>
+                                                            <div class="body-certificate-date">2025-01-01</div>
+                                                        </div>
+
+                                                        <div class="body-certificate-text">
+                                                            <p>대·중소기업·농어업협력재단은 「대·중소기업 상생협력 촉진에 관한 법률」 제20조 제2
+                                                            항 제8호에 따라 ‘상생결제의 관리·운영 및 보급·확산 지원’을 추진하고 있으며, 「상생
+                                                            결제 운영요령(중소벤처기업부 고시 제 2021-44호)」 제7조에 따라 2차이하 협력기업
+                                                            에게 상생결제로 지급할 금액을 만기일까지 협력재단 예치계좌에 보관하고 있습니다.</p>
+                                                            <p>귀사의 하위 협력기업에 대한 만기일이 도래하지 않은 상생결제 지급금액은 협력재단
+                                                            계좌에 아래와 같이 보관되고 있습니다
+                                                            </p>
+                                                        </div>
+
+                                                        <div class="table-responsive table-search-wrapper">
+                                                            <table class="table View-table rower">
+                                                                <tbody>
+                                                                    <tr>
+                                                                        <th scope="row"><div>상생매출채권 발행금액 (A)</div></th>
+                                                                        <td class="text-end">
+                                                                            <div><span>900,000,000</span></div>
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <th scope="row"><div>할인, 선정산 금액 (B)</div></th>
+                                                                        <td class="text-end">
+                                                                            <div><span>600,000,000</span></div>
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <th scope="row" class="point-color"><div>예치금계좌 증빙 금액 (A-B)</div></th>
+                                                                        <td class="text-end point-color">
+                                                                            <div><span>300,000,000</span></div>
+                                                                        </td>
+                                                                    </tr>
+                                                                </tbody>
+                                                            </table>
+                                                        </div>
+
+                                                        <div class="caption">※ 본 문서는 고객 편의를 위해 제공되며 법적효력이 없습니다.</div>
+                                                    </div>
+                                                </div>
+                                                <div class="body-certificate-foot">
+                                                    <div class="body-certificate-date">2025-01-01</div>
+                                                    <div class="body-certificate-name">대ㆍ중소기업ㆍ농어업협력재단 사무총장</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- // popup - 예치계좌 입금확인서 -->
+                        </div>
+                    </div>
+                    <!-- End col -->
+                    
+                </div>
+                <!-- End row -->
+            </div>
+            <!-- End Contentbar -->
+            
+    <!-- 페이지 확인용 css, js 개발 옮길 필요 X -->
+        <!-- Defalut Start css -->
+        <link href="/src/main/resources/static/css/bootstrap.css" rel="stylesheet" type="text/css">
+        <link href="/src/main/resources/static/css/jquery-ui.min.css" rel="stylesheet" type="text/css">
+        <link href="/src/main/resources/static/css/icons.css" rel="stylesheet" type="text/css">
+        <link href="/src/main/resources/static/css/style.css" rel="stylesheet" type="text/css">
+        
+        <!-- Defalut js -->
+        <script src="/src/main/resources/static/lib/jquery-3.7.1.min.js"></script>
+        <script src="/src/main/resources/static/lib/popper.min.js"></script>
+        <script src="/src/main/resources/static/lib/bootstrap.js"></script>
+        <script src="/src/main/resources/static/lib/modernizr.min.js"></script>
+        <script src="/src/main/resources/static/lib/detect.js"></script>
+        <!-- End js -->
+        
+        <!-- Datepicker CSS -->
+        <link href="/src/main/resources/static/lib/plugins/datepicker/datepicker.min.css" rel="stylesheet" type="text/css">
+        <!-- Select2 css -->
+        <link href="/src/main/resources/static/lib/plugins/select2/select2.min.css" rel="stylesheet" type="text/css">
+        <!-- Datatable CSS -->
+        <link href="/src/main/resources/static/lib/plugins/datatables/dataTables.dataTables.css" rel="stylesheet" type="text/css">
+
+        <!-- Select2 js -->
+        <script src="/src/main/resources/static/lib/plugins/select2/select2.min.js"></script>
+        <!-- Datepicker JS -->
+        <script src="/src/main/resources/static/lib/plugins/datepicker/datepicker.min.js"></script>
+        <script src="/src/main/resources/static/lib/plugins/datepicker/i18n/datepicker.ko.js"></script>
+        <script src="/src/main/resources/static/lib/custom/custom-form-datepicker.js"></script>
+        <!-- Datatable js -->
+        <script src="/src/main/resources/static/lib/datatables.min.js"></script>
+        <script src="/src/main/resources/static/lib/plugins/datatables/dataTables.buttons.min.js"></script>
+        <script src="/src/main/resources/static/lib/plugins/datatables/jszip.min.js"></script>
+        <script src="/src/main/resources/static/lib/plugins/datatables/buttons.html5.min.js"></script>
+        <script src="/src/main/resources/static/lib/plugins/datatables/buttons.print.min.js"></script>
+
+        <script src="/src/main/resources/static/lib/common.js"></script>
+    <!-- // 페이지 확인용 css, js 개발 옮길 필요 X -->
+
+    <!-- 현재 페이지 js -->
+    <script>
+        if (!$.fn.DataTable.isDataTable('#datatable-ajax')) {    
+            $('#datatable-ajax').DataTable({
+                responsive: true,
+                lengthChange: true,
+                scrollX: true,
+                autoWidth: false,
+                order: [[0, '']],//desc
+                ajax: 'data/AI_00012M.txt',
+                dom: '<"dt-toolbar-wrapper"Bi<"custom-length">>frtp',
+                buttons: [                    
+                    {
+                        extend: 'excelHtml5',
+                        text: '다운로드',
+                        className: 'btn my-excel-btn'
+                    },
+                    {
+                        extend: 'print',
+                        text: '인쇄',
+                        className: 'btn my-print-btn'
+                    }
+                ],
+                language: {
+                    infoEmpty: '표시할 데이터가 없습니다',
+                    infoFiltered: '(전체 _MAX_ 개 중 검색결과)',
+                    zeroRecords: '검색된 데이터가 없습니다',
+                },
+                infoCallback: function(settings, start, end, max, total, pre) {
+                    var api = this.api();
+                    var pageInfo = api.page.info();
+                    return '총 <strong>' + total + '</strong> 건  <span class="page-info">(' + pageInfo.page + 1 + ' / ' + (pageInfo.pages) + ' 페이지)</span>';
+                },
+                initComplete: function() {
+                    var api = this.api();
+                    var lengthMenu = $('<div class="custom-length-menu"><select class="form-select"><option value="10">10개씩 보기</option><option value="25">25개씩 보기</option><option value="50">50개씩 보기</option><option value="100">100개씩 보기</option></select></div>');
+                    
+                    $('.custom-length').html(lengthMenu);
+                    
+                    lengthMenu.find('select').on('change', function() {
+                        api.page.len($(this).val()).draw();
+                    });
+                },
+                // 판매기업 grid
+                columns: [
+                    {
+                        title: 'No.',
+                        width: '60px',
+                        orderable: false,
+                        render: function (data, type, row, meta) {
+                            return meta.row + 1;
+                        }
+                    },
+                    { title: '수취기업', width: '200px'},
+                    { title: '수취기업 사업자등록번호', width: '160px'},
+                    { title: '대출채권번호', width: '160px'},
+                    { title: '발행금액', width: '120px'},
+                    { title: '발행금액', width: '120px'},
+                    { title: '할인/선정산 금액', width: '120px'},
+                    { title: '발행일자', width: '120px'},
+                    { title: '만기일자', width: '120px'},
+                ],
+                columnDefs: [
+                    { 
+                        targets: [0, 2, 3, 7, 8],
+                        className: 'text-center'
+                    },
+                    { orderable: false, targets: '_all' }
+                ],
+            });
+        }
+
+        $('.btn-certificate-view').on('click', '', function() {
+            myFunction();
+        });
+
+        function myFunction() {
+            $('#bd-example-modal2').modal('show');
+        }
+
+        // 오른쪽 버튼 커스텀 div로 추가
+        $(function() {
+            var $rightBtns = $('<div class="dt-button-right">\
+                <span>(단위 : 원)</span>\
+            </div>');
+            $('.dt-toolbar-wrapper').find('.dt-buttons').append($rightBtns);
+        });
+    </script>
+    

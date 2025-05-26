@@ -1,0 +1,80 @@
+<html lang="ko" xmlns:th="http://www.thymeleaf.org" th:fragment="ConfigFragment">
+    <head>
+        <!--Common Head-->
+        <title>결제전산원 | 상생결제운영사</title>
+
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta http-equiv="Expires" content="-1">
+        <meta http-equiv="Pragma" content="no-cache">
+        <meta http-equiv="Cache-Control" content="no-cache">
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimal-ui">
+        <meta name="description" content="정부 공인 B2B 결제수단 상생결제! 대금회수는 안전하게, 대금지급은 알뜰하게!">
+        <meta name="keywords" content="상생결제, B2B, 결제수단, ESG, 세액공제, 동반성장">
+        <meta name="title" content="결제전산원｜상생결제운영사">
+        <meta name="keywords" content="결제전산원, 상생결제, B2B, 결제수단, ESG, 세액공제, 동반성장">
+        <meta name="description" content="정부 공인 B2B 결제수단 상생결제! 대금회수는 안전하게, 대금지급은 알뜰하게!">
+        <meta name="author" content="결제전산원 | 상생결제운영사">
+        <meta name="format-detection" content="telephone=no">
+        <meta property="og:title" content="결제전산원 | 상생결제운영사">
+        <meta property="og:description" content="정부 공인 B2B 결제수단 상생결제! 대금회수는 안전하게, 대금지급은 알뜰하게!">
+        <meta property="og:image" content="/upload/conf/restmb_idxmake.jpg">
+        <meta property="twitter:title" content="결제전산원 | 상생결제운영사">
+        <meta property="twitter:description" content="정부 공인 B2B 결제수단 상생결제! 대금회수는 안전하게, 대금지급은 알뜰하게!">
+        <!-- favicon -->
+        <link rel="shortcut icon" href="/src/main/resources/images/common/favicon.ico" type="image/x-icon">
+        <link rel="apple-touch-icon" href="/src/main/resources/images/common/favicon.ico">
+
+        <!-- Defalut Start css -->
+        <!-- bootstrap 5.3.5 stylesheet 적용 -->
+        <link th:inline="css" th:href="@{/src/main/resources/static/css/bootstrap.css}" rel="stylesheet" type="text/css">
+        <!--Common CSS -->
+        <link th:inline="css" th:href="@{/src/main/resources/static/css/jquery-ui.min.css}" rel="stylesheet" type="text/css">
+        <link th:inline="css" th:href="@{/src/main/resources/static/css/style.css}" rel="stylesheet" type="text/css">
+        <!-- Datepicker CSS -->
+        <link th:inline="css" th:href="@{/src/main/resources/static/lib/plugins/datepicker/datepicker.min.css}" rel="stylesheet" type="text/css">
+        <!-- Select2 css -->
+        <link th:inline="css" th:href="@{/src/main/resources/static/lib/plugins/select2/select2.min.css}" rel="stylesheet" type="text/css">
+        <!-- Datatable CSS -->
+        <link th:inline="css" th:href="@{/src/main/resources/static/lib/plugins/datatables/dataTables.dataTables.css}" rel="stylesheet" type="text/css">
+        <!-- Sweet-Alert css -->
+        <link th:inline="css" th:href="@{/src/main/resources/static/lib/plugins/sweet-alert2/sweetalert2.min.css}" rel="stylesheet" type="text/css">
+        <!-- FixedColumns CSS -->
+        <link th:inline="css" th:href="@{/src/main/resources/static/css/fixedColumns.dataTables.css}" rel="stylesheet" type="text/css">
+        <link th:inline="css" th:href="@{/src/main/resources/static/css/fixedHeader.dataTables.css}" rel="stylesheet" type="text/css">
+
+        <!-- Defalut js -->
+        <script th:inline="javascript" type="text/javascript" th:src="@{/src/main/resources/static/lib/jquery-3.7.1.min.js}"></script>
+        <script th:inline="javascript" type="text/javascript" th:src="@{/src/main/resources/static/lib/popper.min.js}"></script>
+        <script th:inline="javascript" type="text/javascript" th:src="@{/src/main/resources/static/lib/bootstrap.js}"></script>
+        <script th:inline="javascript" type="text/javascript" th:src="@{/src/main/resources/static/lib/modernizr.min.js}"></script>
+        <script th:inline="javascript" type="text/javascript" th:src="@{/src/main/resources/static/lib/detect.js}"></script>
+        <!-- Datepicker JS -->
+        <script th:inline="javascript" type="text/javascript" th:src="@{/src/main/resources/static/lib/plugins/datepicker/datepicker.min.js}"></script>
+        <script th:inline="javascript" type="text/javascript" th:src="@{/src/main/resources/static/lib/plugins/datepicker/i18n/datepicker.ko.js}"></script>
+        <script th:inline="javascript" type="text/javascript" th:src="@{/src/main/resources/static/lib/custom/custom-form-datepicker.js}"></script>
+        <!-- Select2 js -->
+        <script th:inline="javascript" type="text/javascript" th:src="@{/src/main/resources/static/lib/plugins/select2/select2.min.js}"></script>
+        <!-- Parsley js -->
+        <script th:inline="javascript" type="text/javascript" th:src="@{/src/main/resources/static/lib/plugins/validatejs/validate.min.js}"></script>
+        <!-- Datatable js -->
+        <script th:inline="javascript" type="text/javascript" th:src="@{/src/main/resources/static/lib/datatables.min.js}"></script>
+        <script th:inline="javascript" type="text/javascript" th:src="@{/src/main/resources/static/lib/fixedColumns.dataTables.js}"></script>
+        <script th:inline="javascript" type="text/javascript" th:src="@{/src/main/resources/static/lib/fixedHeader.dataTables.js}"></script>
+        <script th:inline="javascript" type="text/javascript" th:src="@{/src/main/resources/static/lib/dataTables.fixedColumns.js}"></script>
+        <script th:inline="javascript" type="text/javascript" th:src="@{/src/main/resources/static/lib/dataTables.fixedHeader.js}"></script>
+        <script th:inline="javascript" type="text/javascript" th:src="@{/src/main/resources/static/lib/plugins/datatables/dataTables.buttons.min.js}"></script>
+        <script th:inline="javascript" type="text/javascript" th:src="@{/src/main/resources/static/lib/plugins/datatables/jszip.min.js}"></script>
+        <script th:inline="javascript" type="text/javascript" th:src="@{/src/main/resources/static/lib/plugins/datatables/buttons.html5.min.js}"></script>
+        <script th:inline="javascript" type="text/javascript" th:src="@{/src/main/resources/static/lib/plugins/datatables/buttons.print.min.js}"></script>
+                
+        <!-- Sweet-Alert js -->
+        <script th:inline="javascript" type="text/javascript" th:src="@{/src/main/resources/static/lib/plugins/sweet-alert2/sweetalert2.min.js}"></script>
+        <script th:inline="javascript" type="text/javascript" th:src="@{/src/main/resources/static/lib/custom/custom-sweet-alert.js}"></script>
+        
+        <script th:inline="javascript" type="text/javascript" th:src="@{/src/main/resources/static/lib/common.js}"></script>
+        <!-- End js -->
+
+    </head>
+</html>

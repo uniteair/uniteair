@@ -1,0 +1,35 @@
+spring:
+  application:
+    name: nextgen
+
+  thymeleaf:
+    cache: false
+    check-template-location: true
+    prefix: classpath:/templates/
+    suffix: .html
+    mode: html
+    enabled: true
+
+  datasource:
+    jdbc-url: jdbc:mysql://192.168.245.41:3306/nextesi?useSSL=false&useUnicode=true&characterEncoding=UTF-8&serverTimezone=Asia/Seoul&allowPublicKeyRetrieval=true&connectTimeout=30000&socketTimeout=30000
+    username: root
+    password: Kefci122333$
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    mapper-locations: classpath:/mapper/**/*.xml
+    hikari:
+      connection-timeout: 30000
+      maximum-pool-size: 10
+      minimum-idle: 5
+
+  mvc:
+    converters:
+      preferred-json-mapper: gson
+
+server:
+  port: 8088
+  servlet:
+    context-path: /
+    encoding:
+      charset: UTF-8
+      enabled: true
+      force: true

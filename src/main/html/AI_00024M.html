@@ -1,0 +1,161 @@
+
+            <!-- Start contents -->    
+            <div class="contents">                
+                <!-- Start row -->
+                <div class="row">
+                    <!-- Start col -->
+                    <div class="col-lg">
+                        <div class="card m-b-30">
+                            <div class="card-header">
+                                <h4 class="card-title">상생결제 통합 실적</h4>
+                            </div>
+                            <div class="card-body">
+                                <div class="table-responsive table-search-wrapper">
+                                    <table class="table Search-table">
+                                        <colgroup>
+                                            <col width="120px"></col>
+                                            <col width="30%"></col>
+                                            <col width="143px"></col>
+                                            <col ></col>
+                                        </colgroup>
+                                        <tbody>
+                                            <tr>                                                
+                                                <th scope="row"><div>기준일자</div></th>
+                                                <td>
+                                                    <div class="form-group">
+                                                        <div class="form-radio">
+                                                            <input class="form-radio-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
+                                                            <label class="form-radio-label" for="inlineRadio1">발행일자</label>
+                                                        </div>
+                                                        <div class="form-radio">
+                                                            <input class="form-radio-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+                                                            <label class="form-radio-label" for="inlineRadio2">만기일자</label>
+                                                        </div>
+                                                    </div>
+                                                </td>
+                                                <th scope="row"><div>조회기간</div></th>
+                                                <td>
+                                                    <div class="form-group form-date">
+                                                        <div class="input-group">
+                                                            <input type="text" id="default-date" class="datepicker-here form-datepicker form-control" placeholder="시작일자" aria-describedby="basic-addon8"/>
+                                                            <div class="input-group-append">
+                                                                <span class="input-group-text" id="basic-addon8"><i class="feather icon-calendar"></i></span>
+                                                            </div>
+                                                        </div>
+                                                        <span class="devider-bullet">-</span>
+                                                        <div class="input-group">
+                                                            <input type="text" id="default-date2" class="datepicker-here form-datepicker form-control" placeholder="종료일자" aria-describedby="basic-addon9"/>
+                                                            <div class="input-group-append">
+                                                                <span class="input-group-text" id="basic-addon9"><i class="feather icon-calendar"></i></span>
+                                                            </div>
+                                                        </div>
+                                                        <div class="btn-group btn-group-toggle btn-month">
+                                                            <button type="button" class="btn btn-tertiary" id="btn-3m">3개월</button>
+                                                            <button type="button" class="btn btn-tertiary" id="btn-6m">6개월</button>
+                                                            <button type="button" class="btn btn-tertiary" id="btn-9m">9개월</button>
+                                                            <button type="button" class="btn btn-tertiary" id="btn-12m">12개월</button>
+                                                        </div>                                          
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row"><div>금융기관</div></th>
+                                                <td>
+                                                    <select class="select2-single form-control" name="select1">
+                                                        <option value="전체">전체</option>
+                                                        <option value="KB증권">KB증권</option>
+                                                        <option value="삼성증권">삼성증권</option>
+                                                        <option value="수협">수협</option>
+                                                        <option value="...">...</option>
+                                                    </select>
+                                                </td>
+                                                <th scope="row"><div>사업장유형</div></th>
+                                                <td>
+                                                    <div class="form-group">
+                                                        <div class="form-radio">
+                                                            <input class="form-radio-input" type="radio" name="inlineRadioOptions2" id="inlineRadio2-1" value="option1">
+                                                            <label class="form-radio-label" for="inlineRadio2-1">전체</label>
+                                                        </div>
+                                                        <div class="form-radio">
+                                                            <input class="form-radio-input" type="radio" name="inlineRadioOptions2" id="inlineRadio2-2" value="option2">
+                                                            <label class="form-radio-label" for="inlineRadio2-2">본사</label>
+                                                        </div>
+                                                        <div class="form-radio">
+                                                            <input class="form-radio-input" type="radio" name="inlineRadioOptions2" id="inlineRadio2-3" value="option3">
+                                                            <label class="form-radio-label" for="inlineRadio2-3">지사</label>
+                                                            <select class="select2-single form-control selective" name="state2">
+                                                                <option value="전체">전체</option>
+                                                                <option value="강남본부">강남본부</option>
+                                                                <option value="경인지점">경인지점</option>
+                                                                <option value="경북본부">경북본부</option>
+                                                            </select>
+                                                        </div>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                                <div class="button-list button-group-list">
+                                    <button type="button" class="btn btn-tertiary">초기화</button>
+                                    <button type="button" class="btn btn-primary">조회</button>
+                                </div>
+                                
+                                <!-- Datatable Start -->
+                                <div class="dataTable-wrap">
+                                    <div class="table-responsive">
+                                        테이블
+                                    </div>
+                                </div>
+                                
+                                <!-- Datatable End -->
+                            </div>
+                        </div>
+                    </div>
+                    <!-- End col -->
+                    
+                </div>
+                <!-- End row -->
+            </div>
+            <!-- End Contentbar -->
+    
+    <!-- 페이지 확인용 css, js 개발 옮길 필요 X -->
+        <!-- Defalut Start css -->
+        <link href="/src/main/resources/static/css/bootstrap.css" rel="stylesheet" type="text/css">
+        <link href="/src/main/resources/static/css/jquery-ui.min.css" rel="stylesheet" type="text/css">
+        <link href="/src/main/resources/static/css/icons.css" rel="stylesheet" type="text/css">
+        <link href="/src/main/resources/static/css/style.css" rel="stylesheet" type="text/css">
+        
+        <!-- Defalut js -->
+        <script src="/src/main/resources/static/lib/jquery-3.7.1.min.js"></script>
+        <script src="/src/main/resources/static/lib/popper.min.js"></script>
+        <script src="/src/main/resources/static/lib/bootstrap.js"></script>
+        <script src="/src/main/resources/static/lib/modernizr.min.js"></script>
+        <script src="/src/main/resources/static/lib/detect.js"></script>
+        <!-- End js -->
+        
+        <!-- Datepicker CSS -->
+        <link href="/src/main/resources/static/lib/plugins/datepicker/datepicker.min.css" rel="stylesheet" type="text/css">
+        <!-- Select2 css -->
+        <link href="/src/main/resources/static/lib/plugins/select2/select2.min.css" rel="stylesheet" type="text/css">
+        <!-- Datatable CSS -->
+        <link href="/src/main/resources/static/lib/plugins/datatables/dataTables.dataTables.css" rel="stylesheet" type="text/css">
+
+        <!-- Select2 js -->
+        <script src="/src/main/resources/static/lib/plugins/select2/select2.min.js"></script>
+        <!-- Datepicker JS -->
+        <script src="/src/main/resources/static/lib/plugins/datepicker/datepicker.min.js"></script>
+        <script src="/src/main/resources/static/lib/plugins/datepicker/i18n/datepicker.ko.js"></script>
+        <script src="/src/main/resources/static/lib/custom/custom-form-datepicker.js"></script>
+        <!-- Datatable js -->
+        <script src="/src/main/resources/static/lib/datatables.min.js"></script>
+        <script src="/src/main/resources/static/lib/plugins/datatables/dataTables.buttons.min.js"></script>
+        <script src="/src/main/resources/static/lib/plugins/datatables/jszip.min.js"></script>
+        <script src="/src/main/resources/static/lib/plugins/datatables/buttons.html5.min.js"></script>
+        <script src="/src/main/resources/static/lib/plugins/datatables/buttons.print.min.js"></script>
+        
+        <script src="/src/main/resources/static/lib/common.js"></script>
+    <!-- // 페이지 확인용 css, js 개발 옮길 필요 X -->
+
+    <!-- 현재 페이지 js -->
+    
