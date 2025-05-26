@@ -2622,35 +2622,35 @@ div.dt-container select.dt-input {
   background-color: #3674D9 !important;
 }
 .dataTable-wrap div.dt-container .dt-paging .dt-paging-button.first {
-  background: url(/src/main/resources/images/common/Icon/1x/ico_chevron_left02.png) no-repeat center / 24px;
+  background: url(/uniteair/src/main/resources/images/common/Icon/1x/ico_chevron_left02.png) no-repeat center / 24px;
   color: transparent !important;
 }
 .dataTable-wrap div.dt-container .dt-paging .dt-paging-button.previous {
-  background: url(/src/main/resources/images/common/Icon/1x/ico_chevron_left01.png) no-repeat center / 24px;
+  background: url(/uniteair/src/main/resources/images/common/Icon/1x/ico_chevron_left01.png) no-repeat center / 24px;
   color: transparent !important;
 }
 .dataTable-wrap div.dt-container .dt-paging .dt-paging-button.next {
-  background: url(/src/main/resources/images/common/Icon/1x/ico_chevron_right01.png) no-repeat center / 24px;
+  background: url(/uniteair/src/main/resources/images/common/Icon/1x/ico_chevron_right01.png) no-repeat center / 24px;
   color: transparent !important;
 }
 .dataTable-wrap div.dt-container .dt-paging .dt-paging-button.last {
-  background: url(/src/main/resources/images/common/Icon/1x/ico_chevron_right02.png) no-repeat center / 24px;
+  background: url(/uniteair/src/main/resources/images/common/Icon/1x/ico_chevron_right02.png) no-repeat center / 24px;
   color: transparent !important;
 }
 .dataTable-wrap div.dt-container .dt-paging .dt-paging-button.disabled.first {
-  background: url(/src/main/resources/images/common/Icon/1x/ico_chevron_left04.png) no-repeat center / 24px;
+  background: url(/uniteair/src/main/resources/images/common/Icon/1x/ico_chevron_left04.png) no-repeat center / 24px;
   color: transparent !important;
 }
 .dataTable-wrap div.dt-container .dt-paging .dt-paging-button.disabled.previous {
-  background: url(/src/main/resources/images/common/Icon/1x/ico_chevron_left03.png) no-repeat center / 24px;
+  background: url(/uniteair/src/main/resources/images/common/Icon/1x/ico_chevron_left03.png) no-repeat center / 24px;
   color: transparent !important;
 }
 .dataTable-wrap div.dt-container .dt-paging .dt-paging-button.disabled.next {
-  background: url(/src/main/resources/images/common/Icon/1x/ico_chevron_right03.png) no-repeat center / 24px;
+  background: url(/uniteair/src/main/resources/images/common/Icon/1x/ico_chevron_right03.png) no-repeat center / 24px;
   color: transparent !important;
 }
 .dataTable-wrap div.dt-container .dt-paging .dt-paging-button.disabled.last {
-  background: url(/src/main/resources/images/common/Icon/1x/ico_chevron_right04.png) no-repeat center / 24px;
+  background: url(/uniteair/src/main/resources/images/common/Icon/1x/ico_chevron_right04.png) no-repeat center / 24px;
   color: transparent !important;
 }
 div.dt-container .dt-paging .ellipsis {
@@ -3901,10 +3901,10 @@ div.dt-container .dt-paging .ellipsis {
   height: 24px;
 }
 .btn.ico .ico-chevron-left {
-  background: url(/src/main/resources/images/common/Icon/1x/ico_chevron_left01.png) no-repeat center / contain;
+  background: url(/uniteair/src/main/resources/images/common/Icon/1x/ico_chevron_left01.png) no-repeat center / contain;
 }
 .btn.ico .ico-chevron-right {
-  background: url(/src/main/resources/images/common/Icon/1x/ico_chevron_right01.png) no-repeat center / contain;
+  background: url(/uniteair/src/main/resources/images/common/Icon/1x/ico_chevron_right01.png) no-repeat center / contain;
 }
 
 /* size */
@@ -5148,28 +5148,28 @@ div.dt-container .dt-paging .ellipsis {
   margin-left: 0;
 }
 .page-item .page-link.first {
-  background: url(/src/main/resources/images/common/Icon/1x/ico_chevron_left02.png) no-repeat center / 24px;
+  background: url(/uniteair/src/main/resources/images/common/Icon/1x/ico_chevron_left02.png) no-repeat center / 24px;
 }
 .page-item .page-link.prev {
-  background: url(/src/main/resources/images/common/Icon/1x/ico_chevron_left01.png) no-repeat center / 24px;
+  background: url(/uniteair/src/main/resources/images/common/Icon/1x/ico_chevron_left01.png) no-repeat center / 24px;
 }
 .page-item .page-link.next {
-  background: url(/src/main/resources/images/common/Icon/1x/ico_chevron_right01.png) no-repeat center / 24px;
+  background: url(/uniteair/src/main/resources/images/common/Icon/1x/ico_chevron_right01.png) no-repeat center / 24px;
 }
 .page-item .page-link.last {
-  background: url(/src/main/resources/images/common/Icon/1x/ico_chevron_right02.png) no-repeat center / 24px;
+  background: url(/uniteair/src/main/resources/images/common/Icon/1x/ico_chevron_right02.png) no-repeat center / 24px;
 }
 .page-item.disabled .page-link.first {
-  background: url(/src/main/resources/images/common/Icon/1x/ico_chevron_left04.png) no-repeat center / 24px;
+  background: url(/uniteair/src/main/resources/images/common/Icon/1x/ico_chevron_left04.png) no-repeat center / 24px;
 }
 .page-item.disabled .page-link.prev {
-  background: url(/src/main/resources/images/common/Icon/1x/ico_chevron_left03.png) no-repeat center / 24px;
+  background: url(/uniteair/src/main/resources/images/common/Icon/1x/ico_chevron_left03.png) no-repeat center / 24px;
 }
 .page-item.disabled .page-link.next {
-  background: url(/src/main/resources/images/common/Icon/1x/ico_chevron_right03.png) no-repeat center / 24px;
+  background: url(/uniteair/src/main/resources/images/common/Icon/1x/ico_chevron_right03.png) no-repeat center / 24px;
 }
 .page-item.disabled .page-link.last {
-  background: url(/src/main/resources/images/common/Icon/1x/ico_chevron_right04.png) no-repeat center / 24px;
+  background: url(/uniteair/src/main/resources/images/common/Icon/1x/ico_chevron_right04.png) no-repeat center / 24px;
 }
 
 /* 
@@ -6942,17 +6942,17 @@ canvas {
 }
 .datepicker--nav-action:first-child {
   margin-left: auto;
-  background: url(/src/main/resources/images/common/Icon/1x/ico_chevron_left01.png) no-repeat center / contain;
+  background: url(/uniteair/src/main/resources/images/common/Icon/1x/ico_chevron_left01.png) no-repeat center / contain;
 }
 .datepicker--nav-action:first-child:hover {
-  background: url(/src/main/resources/images/common/Icon/1x/ico_chevron_left01.png) no-repeat center / contain;
+  background: url(/uniteair/src/main/resources/images/common/Icon/1x/ico_chevron_left01.png) no-repeat center / contain;
 }
 .datepicker--nav-action:last-child {
   margin-right: auto;
-  background: url(/src/main/resources/images/common/Icon/1x/ico_chevron_right01.png) no-repeat center / contain;
+  background: url(/uniteair/src/main/resources/images/common/Icon/1x/ico_chevron_right01.png) no-repeat center / contain;
 }
 .datepicker--nav-action:last-child:hover {
-  background: url(/src/main/resources/images/common/Icon/1x/ico_chevron_right01.png) no-repeat center / contain;
+  background: url(/uniteair/src/main/resources/images/common/Icon/1x/ico_chevron_right01.png) no-repeat center / contain;
 }
 .datepicker--nav-title {
   margin: 0 32px;
@@ -7550,7 +7550,7 @@ textarea.form-control {
   width: 24px;
   height: 24px;
   border: none;
-  background: url(/src/main/resources/images/common/Icon/1x/ico_calendar.png) no-repeat center / contain;
+  background: url(/uniteair/src/main/resources/images/common/Icon/1x/ico_calendar.png) no-repeat center / contain;
 }
 .form-group.form-date .input-group .input-group-text i {
   display: none;
@@ -7991,10 +7991,10 @@ span.select2-container .select2-selection--single .select2-selection__rendered {
   border-width: initial !important;
   border-style: initial !important;
   border-color: initial !important;
-  background: url(/src/main/resources/images/common/icon/1x/ico_chevron_down.png) no-repeat center / contain;
+  background: url(/uniteair/src/main/resources/images/common/icon/1x/ico_chevron_down.png) no-repeat center / contain;
 }
 .select2-container--default.select2-container--open .select2-selection--single .select2-selection__arrow b {
-  background: url(/src/main/resources/images/common/icon/1x/ico_chevron_up.png) no-repeat center / contain;
+  background: url(/uniteair/src/main/resources/images/common/icon/1x/ico_chevron_up.png) no-repeat center / contain;
 }
 .select2-dropdown {
   top: 4px;
@@ -8015,7 +8015,7 @@ span.select2-container .select2-selection--single .select2-selection__rendered {
 }
 .select2-container--default .select2-results__option[aria-selected=true] {
   padding-right: 40px;
-  background: url(/src/main/resources/images/common/icon/1x/ico_check02.png) no-repeat right 12px center #fff !important;
+  background: url(/uniteair/src/main/resources/images/common/icon/1x/ico_check02.png) no-repeat right 12px center #fff !important;
   font-weight: 500;
   color: #3674D9 !important;
 }
@@ -8807,7 +8807,7 @@ span.select2-container .select2-selection--single .select2-selection__rendered {
   height: 30px;
   margin-left:8px; 
   border: 0;
-  background: url('/src/main/resources/images/common/Icon/1x/ico_close.png') no-repeat center center;
+  background: url('/uniteair/src/main/resources/images/common/Icon/1x/ico_close.png') no-repeat center center;
 }
 
 .modal-title {
@@ -8833,7 +8833,7 @@ span.select2-container .select2-selection--single .select2-selection__rendered {
   height:30px;
   border: 0;
   text-indent: -9999px;
-  background: url('/src/main/resources/images/common/Icon/1x/ico_print_line.png') no-repeat center center;
+  background: url('/uniteair/src/main/resources/images/common/Icon/1x/ico_print_line.png') no-repeat center center;
 }
 /* 
 ---------------------------------
@@ -9144,11 +9144,11 @@ table.dataTable > tbody > tr.current > * {
   border-color: #E7E9EF;
 }
 .my-excel-btn span{
-  background: url('/src/main/resources/images/common/Icon/1x/ico_xel.png') no-repeat left center;
+  background: url('/uniteair/src/main/resources/images/common/Icon/1x/ico_xel.png') no-repeat left center;
   padding-left: 30px;
 }
 .my-print-btn span{
-  background: url('/src/main/resources/images/common/Icon/1x/ico_print.png') no-repeat left center;
+  background: url('/uniteair/src/main/resources/images/common/Icon/1x/ico_print.png') no-repeat left center;
   padding-left: 30px;
 }
 #datatable-ajax_wrapper .dt-search {
@@ -11932,7 +11932,7 @@ table.focus-on tfoot tr.focused td {
   display: block;
   width: 100%;
   height: 100%;
-  background:url(/src/main/resources/images/common/Icon/1x/ico_clear.png) no-repeat center / contain;
+  background:url(/uniteair/src/main/resources/images/common/Icon/1x/ico_clear.png) no-repeat center / contain;
   content: "";
 }
 .form-group.has-clear{
@@ -12032,7 +12032,7 @@ table.focus-on tfoot tr.focused td {
   height: 20px;
   padding: 0;
   border: none;
-  background: url('/src/main/resources/images/common/Icon/1x/ico_help01.png') no-repeat center / contain;
+  background: url('/uniteair/src/main/resources/images/common/Icon/1x/ico_help01.png') no-repeat center / contain;
 }
 .bs-tooltip-end, .bs-tooltip-right {
   /* 기존 transform: translate(0, -50%); 에서 Y값을 더 내림 (예: 0, -40%) */
