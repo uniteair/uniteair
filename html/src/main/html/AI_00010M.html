@@ -1,0 +1,324 @@
+
+            <!-- Start contents -->    
+            <div class="contents">                
+                <!-- Start row -->
+                <div class="row">
+                    <!-- Start col -->
+                    <div class="col-lg">
+                        <div class="card m-b-30">
+                            <div class="card-header">
+                                <h4 class="card-title">환출이자 수취내역</h4>
+                            </div>
+                            <div class="card-body">
+                                <div class="table-search-wrapper">
+                                    <table class="table Search-table">
+                                        <colgroup>
+                                            <col width="143px"></col>
+                                            <col ></col>
+                                        </colgroup>
+                                        <tbody>
+                                            <tr>                                                
+                                                <th scope="row">
+                                                    <div class="add-object">
+                                                        조회기간
+                                                        <div class="flash-popup">
+                                                            <span>기준일자 : 환출이자 수취일</span>
+                                                            <a href="javascript:;" class="flash-close" onclick="closeFlashPopup(this)">Close</a>
+                                                        </div>
+                                                    </div>
+                                                </th>
+                                                <td>
+                                                    <div class="form-group form-date">
+                                                        <div class="input-group">
+                                                            <input type="text" id="default-date" class="datepicker-here form-datepicker form-control" placeholder="시작일자" aria-describedby="basic-addon8"/>
+                                                            <div class="input-group-append">
+                                                                <span class="input-group-text" id="basic-addon8"><i class="feather icon-calendar"></i></span>
+                                                            </div>
+                                                        </div>
+                                                        <span class="devider-bullet">-</span>
+                                                        <div class="input-group">
+                                                            <input type="text" id="default-date2" class="datepicker-here form-datepicker form-control" placeholder="종료일자" aria-describedby="basic-addon9"/>
+                                                            <div class="input-group-append">
+                                                                <span class="input-group-text" id="basic-addon9"><i class="feather icon-calendar"></i></span>
+                                                            </div>
+                                                        </div>
+                                                        <div class="btn-group btn-group-toggle btn-month">
+                                                            <button type="button" class="btn btn-tertiary" id="btn-3m">3개월</button>
+                                                            <button type="button" class="btn btn-tertiary" id="btn-6m">6개월</button>
+                                                            <button type="button" class="btn btn-tertiary" id="btn-9m">9개월</button>
+                                                            <button type="button" class="btn btn-tertiary" id="btn-12m">12개월</button>
+                                                        </div>                                          
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                                <div class="button-list button-group-list">
+                                    <button type="button" class="btn btn-tertiary">초기화</button>
+                                    <button type="button" class="btn btn-primary">조회</button>
+                                </div>
+                                
+                                <!-- Datatable Start -->
+                                <div class="dataTable-wrap">
+                                    <div class="table-responsive">
+                                        <table id="datatable-ajax" class="table table-striped aligned-center hover"></table>
+                                    </div>
+                                </div>
+
+                                <!-- popup - 환출이자 상세 -->
+                                <div id="bd-example-modal" class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" aria-hidden="true">
+                                    <div class="modal-dialog modal-lg">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <h5 class="modal-title" id="exampleLargeModalLabel">환출이자 상세</h5>
+                                                <div class="btn-group">
+                                                    <button type="button" class="ico-print-btn" onclick="printModalContent(this)"><span>인쇄</span></button>
+                                                    <button type="button" class="close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                                </div>
+                                            </div>
+                                            <div class="modal-body">
+                                                <div class="print-wrapper">
+                                                    <div class="detail-table-view">
+                                                        <div class="detail-table-row">
+                                                            <div class="detail-table-wrapper half-table">
+                                                                <div class="detail-table">
+                                                                    <div class="detail-table-title">
+                                                                        <div class="detail-table-title-label blue-label">발행기업</div>
+                                                                        <div class="detail-table-title-value">주식회사 삼성전자</div>
+                                                                    </div>
+                                                                    <div class="detail-table-content">
+                                                                        <dl>
+                                                                            <dt class="detail-table-content-label">사업자번호</dt>
+                                                                            <dd class="detail-table-content-value">123-45-567890</dd>
+                                                                        </dl>
+                                                                        <dl>
+                                                                            <dt class="detail-table-content-label">기업번호</dt>
+                                                                            <dd class="detail-table-content-value">123456-00</dd>
+                                                                        </dl>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="detail-table-wrapper half-table">
+                                                                <div class="detail-table">
+                                                                    <div class="detail-table-title">
+                                                                        <div class="detail-table-title-label">수취기업</div>
+                                                                        <div class="detail-table-title-value">주식회사 삼성전자</div>
+                                                                    </div>
+                                                                    <div class="detail-table-content">
+                                                                        <dl>
+                                                                            <dt class="detail-table-content-label">사업자번호</dt>
+                                                                            <dd class="detail-table-content-value">123-45-567890</dd>
+                                                                        </dl>
+                                                                        <dl>
+                                                                            <dt class="detail-table-content-label">기업번호</dt>
+                                                                            <dd class="detail-table-content-value">123456-00</dd>
+                                                                        </dl>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="detail-table-row">
+                                                            <div class="detail-table-wrapper">
+                                                                <div class="detail-table">
+                                                                    <div class="detail-table-title">
+                                                                        <div class="detail-table-title-value">주식회사 삼성전자</div>
+                                                                        <div class="detail-table-title-number">채권번호 : <span>12345678901234</span></div>
+
+                                                                        <!-- <div class="status-value">
+                                                                            채권상태
+                                                                            <span class="state-complete">완제</span>
+                                                                            <span class="state-normal">정상</span>
+                                                                            <span class="state-cancel">취소</span>
+                                                                            <span class="state-stop">정지</span>
+                                                                        </div> -->
+                                                                    </div>
+                                                                    <div class="detail-table-content devider-line">
+                                                                        <div>
+                                                                            <dl>
+                                                                                <dt class="detail-table-content-label">발행일자</dt>
+                                                                                <dd class="detail-table-content-value">2025-01-01</dd>
+                                                                            </dl>
+                                                                            <dl>
+                                                                                <dt class="detail-table-content-label">만기일자</dt>
+                                                                                <dd class="detail-table-content-value">2025-01-01</dd>
+                                                                            </dl>
+                                                                            <dl>
+                                                                                <dt class="detail-table-content-label">할인일자</dt>
+                                                                                <dd class="detail-table-content-value blue-label">2025-01-01</dd>
+                                                                            </dl>
+                                                                            <dl>
+                                                                                <dt class="detail-table-content-label">환출일자</dt>
+                                                                                <dd class="detail-table-content-value blue-label">2025-01-01</dd>
+                                                                            </dl>                                                                            
+                                                                        </div>
+                                                                        <div>
+                                                                            <dl>
+                                                                                <dt class="detail-table-content-label">발행금액</dt>
+                                                                                <dd class="detail-table-content-value">700,000,000</dd>
+                                                                            </dl>
+                                                                            <dl>
+                                                                                <dt class="detail-table-content-label">할인금액</dt>
+                                                                                <dd class="detail-table-content-value blue-label">200,000,000</dd>
+                                                                            </dl>
+                                                                            <dl>
+                                                                                <dt class="detail-table-content-label">환출지급금액</dt>
+                                                                                <dd class="detail-table-content-value blue-label">600,000</dd>
+                                                                            </dl>
+                                                                            <dl>
+                                                                                <dt class="detail-table-content-label">입금계좌</dt>
+                                                                                <dd class="detail-table-content-value">KB증권 1234456789012344567890</dd>
+                                                                            </dl>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="caption">※ 본 문서는 고객 편의를 위해 제공되며 법적효력이 없습니다.</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- // popup - 환출이자 상세 -->
+                                
+                                <!-- Datatable End -->
+                            </div>
+                        </div>
+                    </div>
+                    <!-- End col -->
+                    
+                </div>
+                <!-- End row -->
+            </div>
+            <!-- End Contentbar -->
+    
+    <!-- 페이지 확인용 css, js 개발 옮길 필요 X -->
+        <!-- Defalut Start css -->
+        <link href="/src/main/resources/static/css/bootstrap.css" rel="stylesheet" type="text/css">
+        <link href="/src/main/resources/static/css/jquery-ui.min.css" rel="stylesheet" type="text/css">
+        <link href="/src/main/resources/static/css/icons.css" rel="stylesheet" type="text/css">
+        <link href="/src/main/resources/static/css/style.css" rel="stylesheet" type="text/css">
+        
+        <!-- Defalut js -->
+        <script src="/src/main/resources/static/lib/jquery-3.7.1.min.js"></script>
+        <script src="/src/main/resources/static/lib/popper.min.js"></script>
+        <script src="/src/main/resources/static/lib/bootstrap.js"></script>
+        <script src="/src/main/resources/static/lib/modernizr.min.js"></script>
+        <script src="/src/main/resources/static/lib/detect.js"></script>
+        <!-- End js -->
+        
+        <!-- Datepicker CSS -->
+        <link href="/src/main/resources/static/lib/plugins/datepicker/datepicker.min.css" rel="stylesheet" type="text/css">
+        <!-- Select2 css -->
+        <link href="/src/main/resources/static/lib/plugins/select2/select2.min.css" rel="stylesheet" type="text/css">
+        <!-- Datatable CSS -->
+        <link href="/src/main/resources/static/lib/plugins/datatables/dataTables.dataTables.css" rel="stylesheet" type="text/css">
+
+        <!-- Select2 js -->
+        <script src="/src/main/resources/static/lib/plugins/select2/select2.min.js"></script>
+        <!-- Datepicker JS -->
+        <script src="/src/main/resources/static/lib/plugins/datepicker/datepicker.min.js"></script>
+        <script src="/src/main/resources/static/lib/plugins/datepicker/i18n/datepicker.ko.js"></script>
+        <script src="/src/main/resources/static/lib/custom/custom-form-datepicker.js"></script>
+        <!-- Datatable js -->
+        <script src="/src/main/resources/static/lib/datatables.min.js"></script>
+        <script src="/src/main/resources/static/lib/plugins/datatables/dataTables.buttons.min.js"></script>
+        <script src="/src/main/resources/static/lib/plugins/datatables/jszip.min.js"></script>
+        <script src="/src/main/resources/static/lib/plugins/datatables/buttons.html5.min.js"></script>
+        <script src="/src/main/resources/static/lib/plugins/datatables/buttons.print.min.js"></script>
+        
+        <script src="/src/main/resources/static/lib/common.js"></script>
+    <!-- // 페이지 확인용 css, js 개발 옮길 필요 X -->
+
+    <!-- 현재 페이지 js -->
+    <script>
+        if (!$.fn.DataTable.isDataTable('#datatable-ajax')) {    
+            $('#datatable-ajax').DataTable({
+                responsive: true,
+                lengthChange: true,
+                scrollX: true,
+                autoWidth: false,
+                order: [[0, '']],//desc
+                ajax: 'data/AI_00010M.txt',
+                dom: '<"dt-toolbar-wrapper"Bi<"custom-length">>frtp',
+                buttons: [
+                    {
+                        extend: 'excelHtml5',
+                        text: '다운로드',
+                        className: 'btn my-excel-btn'
+                    },
+                    {
+                        extend: 'print',
+                        text: '인쇄',
+                        className: 'btn my-print-btn'
+                    }
+                ],
+                language: {
+                    infoEmpty: '표시할 데이터가 없습니다',
+                    infoFiltered: '(전체 _MAX_ 개 중 검색결과)',
+                    zeroRecords: '검색된 데이터가 없습니다',
+                },
+                infoCallback: function(settings, start, end, max, total, pre) {
+                    var api = this.api();
+                    var pageInfo = api.page.info();
+                    return '총 <strong>' + total + '</strong> 건  <span class="page-info">(' + pageInfo.page + 1 + ' / ' + (pageInfo.pages) + ' 페이지)</span>';
+                },
+                initComplete: function() {
+                    var api = this.api();
+                    var lengthMenu = $('<div class="custom-length-menu"><select class="form-select"><option value="10">10개씩 보기</option><option value="25">25개씩 보기</option><option value="50">50개씩 보기</option><option value="100">100개씩 보기</option></select></div>');
+                    
+                    $('.custom-length').html(lengthMenu);
+                    
+                    lengthMenu.find('select').on('change', function() {
+                        api.page.len($(this).val()).draw();
+                    });
+                },
+                // 판매기업 grid
+                columns: [
+                    { title: 'No.', width: '50px' },
+                    { title: '발행 채권번호', width: '120px' },
+                    { title: '환출일자', width: '120px' },
+                    { title: '환출 지급금액', width: '120px' },
+                    { title: '금융기관', width: '120px' },
+                    { title: '입금계좌번호', width: '240px' },
+                ],
+                
+                // rowsGroup: [
+                //     'first:name',
+                // ],
+                columnDefs: [
+                    {
+                        targets: 1, // 매출채권번호
+                        orderable: true,
+                        render: function(data, type, row, meta) {
+                            return '<span class="clickable-billno">' + data + '</span>';
+                        }
+                    },
+                    { 
+                        targets: [0, 1, 2], 
+                        className: 'text-center'
+                    },
+                    { orderable: false, targets: '_all' }
+                ]
+            });
+        }
+
+        $('#datatable-ajax').on('click', '.clickable-billno', function() {
+            myFunction();
+        });
+
+        function myFunction() {
+            $('#bd-example-modal').modal('show');
+        }
+
+        // 오른쪽 버튼 커스텀 div로 추가
+        $(function() {
+            var $rightBtns = $('<div class="dt-button-right">\
+                <span>(단위 : 원)</span>\
+            </div>');
+            $('.dt-toolbar-wrapper').find('.dt-buttons').append($rightBtns);
+            
+        });
+    </script>

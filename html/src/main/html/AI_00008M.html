@@ -1,0 +1,327 @@
+
+            <!-- Start contents -->    
+            <div class="contents">                
+                <!-- Start row -->
+                <div class="row">
+                    <!-- Start col -->
+                    <div class="col-lg">
+                        <div class="card m-b-30">
+                            <div class="card-header">
+                                <h4 class="card-title">장려금 수취내역</h4>
+                            </div>
+                            
+                            <div class="card-body">
+                                <div class="table-responsive table-search-wrapper">
+                                    <table class="table Search-table">
+                                        <colgroup>
+                                            <col width="120px"></col>
+                                            <col ></col>
+                                        </colgroup>
+                                        <tbody>
+                                            <tr>
+                                                <th scope="row"><div>조회년도</div></th>
+                                                <td>
+                                                    <div class="form-group form-date">
+                                                        <div class="input-group m-r-10">
+                                                            <input type="text" id="year-view-date" class="form-control year-date" placeholder="시작년도" aria-describedby="basic-addon3" />
+                                                            <div class="input-group-append">
+                                                                <span class="input-group-text" id="basic-addon3"><i class="feather icon-calendar"></i></span>
+                                                            </div>
+                                                        </div>
+                                                        <select class="select2-single form-control wx-150" name="state">
+                                                            <option value="전체">전체</option>
+                                                            <option value="1분기">1분기</option>
+                                                            <option value="2분기">2분기</option>
+                                                            <option value="3분기">3분기</option>
+                                                            <option value="4분기">4분기</option>
+                                                        </select>
+                                                        <span class="devider-bullet">-</span>
+                                                        <div class="input-group m-r-10">
+                                                            <input type="text" id="year-view-date2" class="form-control year-date" placeholder="종료년도" aria-describedby="basic-addon3" />
+                                                            <div class="input-group-append">
+                                                                <span class="input-group-text" id="basic-addon4"><i class="feather icon-calendar"></i></span>
+                                                            </div>
+                                                        </div>
+                                                        <select class="select2-single form-control wx-150" name="state2">
+                                                            <option value="전체">전체</option>
+                                                            <option value="1분기">1분기</option>
+                                                            <option value="2분기">2분기</option>
+                                                            <option value="3분기">3분기</option>
+                                                            <option value="4분기">4분기</option>
+                                                        </select>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                                <!-- 시작년보다 종료년도가 이전일 경우, Alert 호출  -->
+                                <button type="button" class="btn btn-sm" id="sa-content01">Alert 보기</button>
+
+                                <div class="button-list button-group-list">
+                                    <button type="button" class="btn btn-tertiary">초기화</button>
+                                    <button type="button" class="btn btn-primary">조회</button>
+                                </div>
+                                
+                                <!-- Datatable Start -->
+                                <div class="dataTable-wrap">
+                                    <div class="table-responsive">
+                                        <table id="datatable-ajax" class="table table-striped aligned-center hover"></table>
+                                    </div>
+                                </div>
+
+                                <!-- Datatable End -->
+                            </div>
+
+                            <!-- popup - 상생결제 장려금 지급증명서 -->
+                            <div id="bd-example-modal2" class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" aria-hidden="true">
+                                <div class="modal-dialog modal-lg">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h5 class="modal-title" id="exampleLargeModalLabel">상생결제 장려금 지급명령서</h5>
+                                            <div class="btn-group">
+                                                <button type="button" class="ico-print-btn" onclick="printModalContent(this)"><span>인쇄</span></button>
+                                                <button type="button" class="close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                            </div>
+                                        </div>
+                                        <div class="modal-body">
+                                            <div class="print-wrapper">
+                                                <div class="foundation_logo">
+                                                    <img src="/src/main/resources/images/common/logo/logo_foundation.png" alt="대중소기업농어업협력재단 / 상생협력으로 건강한 산업생태계 조성"></span>
+                                                </div>
+                                                <div class="popup-content-liner">
+                                                    <div class="header-certificate">
+                                                        2025년 2분기 상생 결제 장려금 지급 증명서
+                                                    </div>
+
+                                                    <div class="body-certificate">
+                                                        <div class="body-certificate-header">
+                                                            <div class="body-certificate-title">글로벌 삼성전자</div>
+                                                            <div class="body-certificate-date">2025-01-01</div>
+                                                        </div>
+
+                                                        <div class="body-certificate-text">
+                                                            <p>대·중소기업·농어업협력재단은 「대·중소기업 상생협력 촉진에 관한 법률」 제20조 제2
+                                                            항 제8호에 따라 ‘상생결제의 관리·운영 및 보급·확산 지원’을 추진하고 있으며, 「상생
+                                                            결제 운영요령(중소벤처기업부 고시 제 2021-44호)」 제8조에 따라 전용예치계좌에서
+                                                            발생한 이자를 협력기업들에게 지급하고 있습니다.</p>
+
+                                                            <p>귀사의 상생결제 이용실적에 따라 장려금이 아래와 같이 지급되었습니다.</p>
+                                                        </div>
+
+                                                        <div class="table-responsive table-search-wrapper">
+                                                            <table class="table View-table rower">
+                                                                <tbody>
+                                                                    <tr>
+                                                                        <th scope="row"><div>신청기간</div></th>
+                                                                        <td class="text-end">
+                                                                            <div>2025년도 1분기</div>
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <th scope="row"><div>지급일</div></th>
+                                                                        <td class="text-end">
+                                                                            <div>2025-05-24</div>
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <th scope="row"><div>장려금</div></th>
+                                                                        <td class="text-end">
+                                                                            <div>300,000,000원</div>
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <th scope="row"><div>발생금융기관</div></th>
+                                                                        <td class="text-end">
+                                                                            <div>KB증권</div>
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <th scope="row"><div>입금 계좌번호</div></th>
+                                                                        <td class="text-end">
+                                                                            <div>신한은행 110-1234-5678-9012</div>
+                                                                        </td>
+                                                                    </tr>
+                                                                </tbody>
+                                                            </table>
+                                                        </div>
+
+                                                        <div class="caption">※ 본 문서는 고객 편의를 위해 제공되며 법적효력이 없습니다.</div>
+                                                    </div>
+                                                </div>
+                                                <div class="body-certificate-foot">
+                                                    <div class="body-certificate-date">2025-01-01</div>
+                                                    <div class="body-certificate-name">대ㆍ중소기업ㆍ농어업협력재단 사무총장</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- // popup - 상생결제 장려금 지급증명서 -->
+                        </div>
+                    </div>
+                    <!-- End col -->
+                    
+                </div>
+                <!-- End row -->
+            </div>
+            <!-- End Contentbar -->
+            
+    <!-- 페이지 확인용 css, js 개발 옮길 필요 X -->
+        <!-- Defalut Start css -->
+        <link href="/src/main/resources/static/css/bootstrap.css" rel="stylesheet" type="text/css">
+        <link href="/src/main/resources/static/css/jquery-ui.min.css" rel="stylesheet" type="text/css">
+        <link href="/src/main/resources/static/css/icons.css" rel="stylesheet" type="text/css">
+        <link href="/src/main/resources/static/css/style.css" rel="stylesheet" type="text/css">
+        
+        <!-- Defalut js -->
+        <script src="/src/main/resources/static/lib/jquery-3.7.1.min.js"></script>
+        <script src="/src/main/resources/static/lib/popper.min.js"></script>
+        <script src="/src/main/resources/static/lib/bootstrap.js"></script>
+        <script src="/src/main/resources/static/lib/modernizr.min.js"></script>
+        <script src="/src/main/resources/static/lib/detect.js"></script>
+        <!-- End js -->
+        
+        <!-- Datepicker CSS -->
+        <link href="/src/main/resources/static/lib/plugins/datepicker/datepicker.min.css" rel="stylesheet" type="text/css">
+        <!-- Select2 css -->
+        <link href="/src/main/resources/static/lib/plugins/select2/select2.min.css" rel="stylesheet" type="text/css">
+        <!-- Datatable CSS -->
+        <link href="/src/main/resources/static/lib/plugins/datatables/dataTables.dataTables.css" rel="stylesheet" type="text/css">
+
+        <!-- Select2 js -->
+        <script src="/src/main/resources/static/lib/plugins/select2/select2.min.js"></script>
+        <!-- Datepicker JS -->
+        <script src="/src/main/resources/static/lib/plugins/datepicker/datepicker.min.js"></script>
+        <script src="/src/main/resources/static/lib/plugins/datepicker/i18n/datepicker.ko.js"></script>
+        <script src="/src/main/resources/static/lib/custom/custom-form-datepicker.js"></script>
+        <!-- Datatable js -->
+        <script src="/src/main/resources/static/lib/datatables.min.js"></script>
+        <script src="/src/main/resources/static/lib/plugins/datatables/dataTables.buttons.min.js"></script>
+        <script src="/src/main/resources/static/lib/plugins/datatables/jszip.min.js"></script>
+        <script src="/src/main/resources/static/lib/plugins/datatables/buttons.html5.min.js"></script>
+        <script src="/src/main/resources/static/lib/plugins/datatables/buttons.print.min.js"></script>
+
+        <!-- Sweet-Alert css -->
+        <link href="/src/main/resources/static/lib/plugins/sweet-alert2/sweetalert2.min.css" rel="stylesheet" type="text/css">
+        <!-- Sweet-Alert js -->
+        <script src="/src/main/resources/static/lib/plugins/sweet-alert2/sweetalert2.min.js"></script>
+        <script src="/src/main/resources/static/lib/custom/custom-sweet-alert.js"></script>
+        
+        <script src="/src/main/resources/static/lib/common.js"></script>
+    <!-- // 페이지 확인용 css, js 개발 옮길 필요 X -->
+
+    <!-- 현재 페이지 js -->
+    <script>
+        if (!$.fn.DataTable.isDataTable('#datatable-ajax')) {    
+            $('#datatable-ajax').DataTable({
+                responsive: true,
+                lengthChange: true,
+                scrollX: true,
+                autoWidth: false,
+                order: [[0, '']],//desc
+                ajax: 'data/AI_00008M.txt',
+                dom: '<"dt-toolbar-wrapper"Bi<"custom-length">>frtp',
+                buttons: [                    
+                    {
+                        extend: 'excelHtml5',
+                        text: '다운로드',
+                        className: 'btn my-excel-btn'
+                    },
+                    {
+                        extend: 'print',
+                        text: '인쇄',
+                        className: 'btn my-print-btn'
+                    }
+                ],
+                language: {
+                    infoEmpty: '표시할 데이터가 없습니다',
+                    infoFiltered: '(전체 _MAX_ 개 중 검색결과)',
+                    zeroRecords: '검색된 데이터가 없습니다',
+                },
+                infoCallback: function(settings, start, end, max, total, pre) {
+                    var api = this.api();
+                    var pageInfo = api.page.info();
+                    return '총 <strong>' + total + '</strong> 건  <span class="page-info">(' + pageInfo.page + 1 + ' / ' + (pageInfo.pages) + ' 페이지)</span>';
+                },
+                initComplete: function() {
+                    var api = this.api();
+                    var lengthMenu = $('<div class="custom-length-menu"><select class="form-select"><option value="10">10개씩 보기</option><option value="25">25개씩 보기</option><option value="50">50개씩 보기</option><option value="100">100개씩 보기</option></select></div>');
+                    
+                    $('.custom-length').html(lengthMenu);
+                    
+                    lengthMenu.find('select').on('change', function() {
+                        api.page.len($(this).val()).draw();
+                    });
+                },
+                // 판매기업 grid
+                columns: [
+                    {
+                        title: 'No.',
+                        width: '60px',
+                        orderable: false,
+                        render: function (data, type, row, meta) {
+                            return meta.row + 1;
+                        }
+                    },
+                    { title: '산정기간', width: '160px'},
+                    { title: '지급일자', width: '160px'},
+                    { title: '장려금', width: '160px'},
+                    { title: '금융기관', width: '120px'},
+                    { title: '입금 계좌번호', width: '200px'},
+                    { title: '',width: '120px',},
+                ],
+                columnDefs: [
+                    {
+                        targets: 6, // checkbox column
+                        orderable: false,
+                        className: 'text-center',
+                        render: function(data, type, row, meta) {
+                            return '<button type="button" class="btn btn-primary btn-sm btn-certificate-view">증명서 보기</button>';
+                        }
+                    },
+                    { 
+                        targets: [0, 1, 2, 4, 5, 6],
+                        className: 'text-center'
+                    },
+                    { orderable: false, targets: '_all' }
+                ],
+            });
+        }
+
+        $('#datatable-ajax').on('click', '.btn-certificate-view', function() {
+            myFunction();
+        });
+
+        function myFunction() {
+            $('#bd-example-modal2').modal('show');
+        }
+
+        // Add select-all checkbox event
+        $(document).on('change', '#select-all-checkbox', function() {
+            var checked = $(this).is(':checked');
+            $('#datatable-ajax').find('.row-checkbox').prop('checked', checked).trigger('change');
+        });
+
+        // Add current class to row when checkbox is checked
+        $(document).on('change', '.row-checkbox', function() {
+            var $tr = $(this).closest('tr');
+            if ($(this).is(':checked')) {
+                $tr.addClass('current');
+            } else {
+                $tr.removeClass('current');
+            }
+        });
+
+        // 오른쪽 버튼 커스텀 div로 추가
+        $(function() {
+            var $rightBtns = $('<div class="dt-button-right">\
+                <span>(단위 : 원)</span>\
+            </div>');
+            $('.dt-toolbar-wrapper').find('.dt-buttons').append($rightBtns);
+            
+        });
+
+    </script>
+    

@@ -1,0 +1,114 @@
+
+            <!-- Start Contentbar -->    
+            <div class="contentbar">
+                <!-- Start row -->
+                <div class="row">                    
+                    <!-- Start col -->                                    
+                    <div class="col-lg-6">
+                        <div class="card m-b-30">
+                            <div class="card-header">
+                                <h5 class="card-title">Popovers on Position</h5>
+                            </div>
+                            <div class="card-body">
+                                <h6 class="card-subtitle">Four options are available: top, right, bottom, and left aligned.</h6>
+                                <div class="button-list">
+                                    <button type="button" class="btn btn-primary" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="top" data-bs-content="Top popover">
+                                        Popover on top
+                                    </button>
+                                    <button type="button" class="btn btn-primary" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="right" data-bs-content="Right popover">
+                                        Popover on right
+                                    </button>
+                                    <button type="button" class="btn btn-primary" data-bs-container="body" data-bs-toggle="popover"
+                                        data-bs-placement="bottom" data-bs-content="Bottom popover">
+                                        Popover on bottom
+                                    </button>
+                                    <button type="button" class="btn btn-primary" data-bs-container="body" data-bs-toggle="popover"
+                                        data-bs-placement="left" data-bs-content="Left popover">
+                                        Popover on left
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- End col -->
+                    <!-- Start col -->
+                    <div class="col-lg-12">
+                        <div class="card m-b-30">
+                            <div class="card-header">
+                                <h5 class="card-title">Guide</h5>
+                            </div>
+                            <div class="card-body">
+                                <pre>
+                                    <code class="language-markup">
+                                        <div>
+                                            <script type="text/plain" class="language-markup">
+    <button type="button" class="btn btn-primary" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="top" data-bs-content="Top popover">
+        Popover on top
+    </button>
+                                            </script>
+                                        </div>
+                                    </code>
+                                </pre>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- End col -->
+                    <!-- Start col -->                                     
+                    <div class="col-lg-6">
+                        <div class="card m-b-30">
+                            <div class="card-header">
+                                <h5 class="card-title">Popovers Disabled</h5>
+                            </div>
+                            <div class="card-body">
+                                <h6 class="card-subtitle">Four options are available: top, right, bottom, and left aligned.</h6>
+                                <div class="button-list">
+                                    <span class="d-inline-block" data-bs-toggle="popover" title="Popover Title" data-bs-content="Disabled popover">
+                                      <button class="btn btn-danger" style="pointer-events: none;" type="button" disabled>Disabled button</button>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- End col -->
+                    <!-- Start col -->                                     
+                    <div class="col-lg-6">
+                        <div class="card m-b-30">
+                            <div class="card-header">
+                                <h5 class="card-title">Popovers Dismissible</h5>
+                            </div>
+                            <div class="card-body">
+                                <h6 class="card-subtitle">Four options are available: top, right, bottom, and left aligned.</h6>
+                                <div class="button-list">
+                                    <a tabindex="0" class="btn btn-lg btn-danger" role="button" data-bs-toggle="popover" data-trigger="focus" title="Dismissible popover" data-bs-content="And here's some amazing content. It's very engaging. Right?">Dismissible popover</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- End col -->
+                </div>
+                <!-- End row --> 
+            </div>
+            <!-- End Contentbar -->
+    
+    <!-- Start css -->
+    <link href="/src/main/resources/static/css/bootstrap.css" rel="stylesheet" type="text/css">
+    <link href="/src/main/resources/static/css/jquery-ui.min.css" rel="stylesheet" type="text/css">
+    <link href="/src/main/resources/static/css/icons.css" rel="stylesheet" type="text/css">
+    <link href="/src/main/resources/static/css/style.css" rel="stylesheet" type="text/css">
+    <!-- End css -->
+    
+    <!-- Start js -->
+    <script src="/src/main/resources/static/lib/jquery-3.7.1.min.js"></script>
+    <script src="/src/main/resources/static/lib/popper.min.js"></script>
+    <script src="/src/main/resources/static/lib/bootstrap.js"></script>
+    <script src="/src/main/resources/static/lib/modernizr.min.js"></script>
+    <script src="/src/main/resources/static/lib/detect.js"></script>
+    <script src="/src/main/resources/static/lib/jquery.slimscroll.js"></script>
+    <!-- End js -->
+
+    <script>
+        var popoverTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="popover"]'))
+        var popoverList = popoverTriggerList.map(function (popoverTriggerEl) {
+            return new bootstrap.Popover(popoverTriggerEl)
+        })
+    </script>

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<!-- Default Layout Import-->
+<html lang="en" xmlns:th="http://www.thymeleaf.org" xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout" 
+      layout:decorate="~{common/layout/defaultLayout}" layout:fragment="Content">
+
+      <head>
+          <title>DB test</title>
+
+          <!-- inline CSS 영역-->
+	    <style th:inline="css" type="text/css">
+	        body {
+	            margin: 30px;
+	            border: 1px solid red;
+	        }
+	    </style>
+	
+	    <!-- inline JS 영역-->
+	    <script th:inline="javascript" type="text/javascript">
+	        $(function() {
+				$.ajax({
+                    url: '/getData',
+                    type: 'post',
+                    data: {},
+                    success: function(data) {
+                        
+                        $('#no').html(data.no);
+                        $('#cst_nm').html(data.cst_nm);
+                        $('#cst_email').html(data.cst_email);
+                        $('#inst_dtm').html(data.inst_dtm);
+                        $('#mdf_dtm').html(data.mdf_dtm);
+                    },
+                    error: function() {
+                        console.log("error");
+                    },
+                    complete: function() {
+                        console.log("complete");
+                    }
+                });
+
+			});
+	    </script>
+      </head>
+
+      <body>
+        <div>
+			<ul>
+                <li>Data 직접 가져오기</li>
+				<li>[[${no}]]</li>
+                <li>[[${cst_nm}]]</li>
+                <li>[[${cst_email}]]</li>
+                <li>[[${inst_dtm}]]</li>
+                <li>[[${mdf_dtm}]]</li>
+			</ul>
+			<ul>
+                <li>ajax로 데이터 가져와서 세팅</li>
+				<li id="no"></li>
+				<li id="cst_nm"></li>
+                <li id="cst_email"></li>
+				<li id="inst_dtm"></li>
+                <li id="mdf_dtm"></li>
+			</ul>
+	    </div>
+      </body>
+
+</html>

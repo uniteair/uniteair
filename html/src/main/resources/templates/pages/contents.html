@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<!-- Default Layout Import-->
+<html lang="en" xmlns:th="http://www.thymeleaf.org" xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+    layout:decorate="~{common/layout/defaultLayout}" layout:fragment="Content">
+
+
+<head>
+    <title>결제전산원 | 상생결제운영사</title>
+
+    <!-- page inline JS 영역-->
+    <script th:inline="javascript" type="text/javascript">
+        $(function () {
+            $.ajax({
+                url: '/',
+                type: '',
+                data: {},
+                success: function (data) {
+
+                },
+                error: function () {
+                    console.log("error");
+                },
+                complete: function () {
+                    console.log("complete");
+                }
+            });
+
+        });
+    </script>
+    
+</head>
+
+    
+<body>
+    <!--Header 영역을 참조합니다.-->
+    <header th:replace="common/fragment/header :: HeaderFragment"></header>
+
+    <!--Content 내용 영역을 참조합니다-->
+    <th:block layout:fragment="Content"></th:block>
+    <!-- <div id="container" class="container">
+        Index
+    </div> -->
+
+    <!--Footer 영역을 참조합니다.-->
+    <footer th:replace="common/fragment/footer :: FooterFragment"></footer>
+</body>
+    
+
+</html>

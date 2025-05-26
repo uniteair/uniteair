@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<!-- Default Layout Import-->
+<html lang="en" xmlns:th="http://www.thymeleaf.org" xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout" 
+      layout:decorate="~{common/layout/defaultLayout}" layout:fragment="Content">
+
+      <head>
+          <title>chart js test</title>
+
+          <script th:inline="javascript" type="text/javascript">
+            $(function() {
+                let chart = document.getElementById("test");
+
+                let testChart = new Chart(chart, {
+                    type: 'bar',
+                    data: {
+                        labels: ['1', '2', '3', '4', '5'],
+                        datasets: [{
+                            label: 'test data',
+                            data: [10, 20, 30, 40, 50],
+                        }]
+                    }
+                });
+            })
+          </script>
+      </head>
+
+      <body>
+        <canvas id="test" width="200" height="200"></canvas>
+      </body>
+
+</html>
